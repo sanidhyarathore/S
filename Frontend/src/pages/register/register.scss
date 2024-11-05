@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .register{
     align-items: center;
     justify-content: center;
@@ -8,7 +13,7 @@
         display: flex;
         background-color: white;
         border-radius: 10px;
-        min-height: 600px;
+        min-height:auto;
         font-family: Arial, Helvetica, sans-serif;
         overflow: hidden;
 
@@ -47,7 +52,7 @@
         
         .right{
             flex: 1;
-            background:linear-gradient(rgb(39, 11, 96, 0.5),rgb(39, 11, 96, 0.5)), url('https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600') center;
+            background:linear-gradient(rgb(39, 11, 96, 0.5),rgb(39, 11, 96, 0.5)), url('https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600') center;
             background-size: cover;
             padding: 50px;
             display: flex;

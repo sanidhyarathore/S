@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './register.scss'
 
 
@@ -21,6 +22,9 @@ const Register = () => {
                         This is a register page where any new user can come up and register for social media.
                     </p>
                     <span>Do you have an account?</span>
+                    <Link to="/Login">
+                        <button>Login</button>
+                    </Link>
                 </div>
             </div>
         </div>
