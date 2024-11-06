@@ -1,6 +1,6 @@
-import LeftBar from "./components/leftBar/leftBar";
+import LeftBar from "./components/leftBar/LeftBar";
 import NavBar from "./components/navBar/navBar";
-import RightBar from "./components/rightBar/rightBar";
+import RightBar from "./components/rightBar/RightBar";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
@@ -21,9 +21,11 @@ function App() {
     return (
       <div>
         <NavBar />
-        <div>
+        <div style={{ display: "flex" }}>
           <LeftBar />
-
+          <div style={{ flex: 6 }}>
+            <Home />
+          </div>
           <RightBar />
         </div>
       </div>
