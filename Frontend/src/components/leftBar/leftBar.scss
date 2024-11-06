@@ -1,7 +1,6 @@
 .leftbar{
     flex: 2;
-    .container{
-        padding: 20px;
+    padding: 20px;
         position: sticky;
         top: 70px;
         height: calc(100vh - 70px);
@@ -9,6 +8,7 @@
         &::-webkit-scrollbar{
             display: none;
         }
+    .container{
         hr{ 
             margin: 20px 0px;
             border: none;
