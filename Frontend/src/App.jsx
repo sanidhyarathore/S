@@ -11,8 +11,6 @@ import {
   Route,
   Navigate,
 } from "react-router-dom"
-//import navBar from "./components/leftBar/LeftBar"
-
 function App() {
 
   const currentuser = true;
