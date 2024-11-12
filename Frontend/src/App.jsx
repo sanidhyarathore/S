@@ -5,18 +5,16 @@ import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
-import "./style.scss"
-import { DarkModeContext } from "../src/context/darkModeContext"
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Navigate,
-} from "react-router-dom"
+import "./style.scss";
+import { DarkModeContext } from "../src/context/darkModeContext";
+import { createBrowserRouter, RouterProvider, Route, Navigate, } from "react-router-dom";
 import { useContext } from "react";
+import { AuthContext } from "./context/authContext";
+
+
 function App() {
 
-  const currentuser = true;
+  const { currentUser } = useContext(AuthContext);
   const { darkMode } = useContext(DarkModeContext)
 
   const Layout = () => {
@@ -35,7 +33,7 @@ function App() {
   }
 
   const ProtectedRoute = ({ children }) => {
-    if (!currentuser) {
+    if (!currentUser) {
       return (
         <Navigate to="/login" />
       )
