@@ -1,4 +1,6 @@
+@import "../../style.scss";
 .leftbar{
+    @include themify($themes){
     flex: 2;
     padding: 20px;
         position: sticky;
@@ -8,12 +10,14 @@
         &::-webkit-scrollbar{
             display: none;
         }
+        background-color: themed("bg");
+        color: themed("textColor");
     .container{
         hr{ 
             margin: 20px 0px;
             border: none;
             height: 0.5px;
-            background-color: lightgray;
+            background-color: themed("border");
         }
 
         span{
@@ -55,4 +59,5 @@
             }
         }
     }
+}
 }

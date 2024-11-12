@@ -2,7 +2,39 @@ import './post.scss'
 
 const Post = () => {
     return (
-        <div>Post</div>
+        <div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+            <div>Post</div>
+        </div>
+
     )
 }
 
