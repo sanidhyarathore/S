@@ -8,3 +8,5 @@ The Technology I used are -
 - ReactJS
 - NodeJS
 - MySQL
+
+Hosted at - [text](https://sanusocial.netlify.app/)
