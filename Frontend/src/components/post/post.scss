@@ -10,13 +10,16 @@
 
         .container{
             padding: 20px;
+
             .user{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
                 .userInfo{
                     display: flex;
                     gap: 20px;
+                    
                     img{
                         height: 40px;
                         width: 40px;
@@ -26,7 +29,7 @@
                     .details{
                         display: flex;
                         flex-direction:column;
-                        span{}
+                        //span{}
                     }
                     .name{
                         font-weight: 500;
@@ -38,9 +41,32 @@
                 }
             }
         }
-
+        
         .content{
-            smargin: 20px;
+            margin: 20px 20px;
+            //align-items: center;
+
+            img{
+                width:100%;
+                max-height: 500px;
+                object-fit: cover;
+                margin-top: 0px;
+            }
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                font-size: 14px;
+            }
         }
     }
 }
