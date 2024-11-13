@@ -1,73 +1,130 @@
 @import "../../style.scss";
 
-.navbar{
-    @include themify($themes){
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    height: 50px;
-    border-bottom: 1px solid themed("border");
-    position: sticky;
-    top: 0;
-    background-color: themed("bg");
-    color: themed("textColor");
-    z-index: 999;
-
-    .left{
+.navbar {
+    @include themify($themes) {
         display: flex;
         align-items: center;
-        gap: 30px;
-        span{
-            font-weight: bold;
-            color: themed("logo");
-            font-size: 20px;
+        justify-content: space-between;
+        padding: 10px 20px;
+        height: 60px;
+        border-bottom: 1px solid themed("border");
+        position: sticky;
+        top: 0;
+        background-color: themed("bg");
+        color: themed("textColor");
+        z-index: 999;
 
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            padding: 10px;
+            .left .searchbar {
+                display: none; /* Hide search bar on small screens */
+            }
+            .right {
+                gap: 10px;
+            }
         }
-        .searchbar{
+
+        .left {
             display: flex;
             align-items: center;
-            gap: 10px;
-            border: 1px solid themed("border");
-            border-radius: 5px;
-            padding: 5px;
-            input{
-                border: none;
-                width: 500px;
-                background-color: transparent;
-                color: themed("textColor");
+            gap: 25px;
 
+            span {
+                font-weight: bold;
+                color: themed("logo");
+                font-size: 22px;
+                cursor: pointer;
+                transition: color 0.2s ease;
+                &:hover {
+                    color: themed("primary");
+                }
             }
 
+            /* Icons hover effect */
+            svg {
+                cursor: pointer;
+                transition: transform 0.2s ease, color 0.2s ease;
+                &:hover {
+                    transform: scale(1.1);
+                    color: themed("primary");
+                }
+            }
+
+            .searchbar {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border: 1px solid themed("border");
+                border-radius: 8px;
+                padding: 5px 10px;
+                background-color: themed("bgSoft");
+                width: 400px;
+                transition: width 0.3s ease;
+
+                input {
+                    border: none;
+                    width: 100%;
+                    background-color: transparent;
+                    color: themed("textColor");
+                    outline: none;
+                    font-size: 14px;
+                    &::placeholder {
+                        color: themed("textColorSoft");
+                    }
+                }
+
+                svg {
+                    color: themed("textColorSoft");
+                }
+
+                &:focus-within {
+                    border-color: themed("primary");
+                }
+            }
         }
 
-    }
-
-    .right{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-
-        .user{
+        .right {
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-weight: 500;
+            gap: 15px;
 
-            img{
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                object-fit: cover;
-
+            svg {
+                cursor: pointer;
+                transition: transform 0.2s ease, color 0.2s ease;
+                &:hover {
+                    transform: scale(1.1);
+                    color: themed("primary");
+                }
             }
 
-            span{
-                padding: 5px;
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 5px 10px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
 
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid themed("border");
+                }
+
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: themed("textColor");
+                }
             }
         }
-
     }
-}
 }
