@@ -9,4 +9,4 @@ The Technology I used are -
 - NodeJS
 - MySQL
 
-Hosted at - [text](https://sanusocial.netlify.app/)
+Hosted at - [Text](https://sanusocial.netlify.app/)
