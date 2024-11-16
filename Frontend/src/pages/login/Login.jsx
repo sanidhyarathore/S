@@ -16,8 +16,8 @@ const Login = () => {
         <div className='login'>
             <div className="card">
                 <div className="left">
-                    <h1>Hello World.</h1>
-                    <p>This is a opening paragraph and it's a decsription og login page</p>
+                    <h1>Sanu Social.</h1>
+                    <p>Welcome to SanuSocial - A new age social media. Login to experience the same</p>
                     <span>Don't you have an account</span>
                     <Link to="/Register">
                         <button>Register</button>
